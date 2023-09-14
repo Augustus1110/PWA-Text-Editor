@@ -1,3 +1,6 @@
+# Avoid Macbook Issues
+.DS_Store
+
 # Logs
 logs
 *.log
