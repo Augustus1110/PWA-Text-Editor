@@ -20,10 +20,10 @@ butInstall.addEventListener('click', async () => {
    return;
   }
 
-  // Shows prompt
+  // Shows prompt that reads "Install!"" grabbed from HTML line 24
   promptEvent.prompt();
   
-  // Resets the deferred prompt variable, it can only be used once.
+  // Resets the deferred prompt variable, button can only be clicked once.
   window.deferredPrompt = null;
   
   butInstall.classList.toggle('hidden', true);
@@ -31,6 +31,6 @@ butInstall.addEventListener('click', async () => {
 
 // Adds a handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {
-  // Clears prompt
+  // Clears prompt and disables initial install button
   window.deferredPrompt = null;
 }); 
